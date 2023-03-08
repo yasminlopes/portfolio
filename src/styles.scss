@@ -1,6 +1,12 @@
 @import "./assets/styles/typography";
 @import "./assets/styles/icons";
 @import "./assets/styles/colors";
+
+body {
+  background-color: $neutral-05;
+  color: $neutral-01;
+}
+
 * {
   margin: 0;
   padding: 0;
