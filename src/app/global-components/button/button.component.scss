@@ -46,3 +46,13 @@
       color: $neutral-01;
     }
   }
+
+  &.danger {
+    border-color: $danger-01;
+    color: $danger-01;
+
+    &:hover {
+      background-color: $danger-01;
+      color: $neutral-01;
+    }
+  }
