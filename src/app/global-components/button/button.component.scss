@@ -65,3 +65,15 @@
       background-color: $warning-01;
       color: $neutral-01;
     }
+  }
+
+  &.info {
+    border-color: $info-01;
+    color: $info-01;
+
+    &:hover {
+      background-color: $info-01;
+      color: $neutral-01;
+    }
+  }
+}
