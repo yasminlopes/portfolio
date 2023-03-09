@@ -1,0 +1,16 @@
+<nav>
+  <header class="navbar-container">
+    <img src="/assets/img/yasmin_lopes_logo_wv.svg" alt="" />
+    <div class="menu-toggle">
+      <button (click)="toggleMenu()">
+        <span class="material-symbols-outlined">{{
+          isMenuOpen ? "close" : "menu"
+        }}</span>
+      </button>
+    </div>
+    <div class="nav-items" [ngClass]="{ show: isMenuOpen }">
+      <ul>
+      </ul>
+    </div>
+  </header>
+</nav>
