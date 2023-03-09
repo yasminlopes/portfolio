@@ -27,3 +27,12 @@
     }
   }
 
+  &.secondary {
+    border-color: $secondary-01;
+    color: $secondary-01;
+
+    &:hover {
+      background-color: $secondary-01;
+      color: $neutral-03;
+    }
+  }
