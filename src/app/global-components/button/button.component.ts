@@ -13,3 +13,10 @@
     classes += this.bgColor ? ` bg-${this.bgColor}` : '';
     return classes;
   }
+
+  get iconClasses(): string {
+    let classes = 'material-icons';
+    classes += this.outlined ? ' outlined' : '';
+    classes += this.color ? ` ${this.color}` : '';
+    return classes;
+  }
