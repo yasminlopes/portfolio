@@ -5,3 +5,11 @@
   @Input() bgColor: string;
 
   @Output() onClick = new EventEmitter<void>();
+
+  get buttonClasses(): string {
+    let classes = 'button';
+    classes += this.outlined ? ' outlined' : '';
+    classes += this.color ? ` ${this.color}` : '';
+    classes += this.bgColor ? ` bg-${this.bgColor}` : '';
+    return classes;
+  }
