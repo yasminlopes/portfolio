@@ -1,0 +1,82 @@
+@import "../../../../assets/styles/colors";
+
+nav {
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .menu-toggle {
+      display: none;
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: $neutral-01;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+    }
+
+    .nav-items {
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin-right: 1rem;
+
+          a {
+            color: $neutral-01;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      &.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+          flex-direction: column;
+          margin-top: 1rem;
+
+          li {
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .navbar-container {
+    flex-direction: column;
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-items {
+      display: none;
+      width: 100%;
+      margin-top: 1rem;
+
+      ul {
+        flex-direction: column;
+        margin: 0;
+      }
+    }
+  }
+}
