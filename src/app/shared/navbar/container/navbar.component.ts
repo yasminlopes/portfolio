@@ -1,0 +1,1 @@
+  public isMenuOpen: boolean = false;
