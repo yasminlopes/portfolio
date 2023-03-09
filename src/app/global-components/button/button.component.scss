@@ -56,3 +56,12 @@
       color: $neutral-01;
     }
   }
+
+  &.warning {
+    border-color: $warning-01;
+    color: $warning-01;
+
+    &:hover {
+      background-color: $warning-01;
+      color: $neutral-01;
+    }
