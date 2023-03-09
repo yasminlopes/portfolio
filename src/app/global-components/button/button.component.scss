@@ -15,3 +15,15 @@
   &.outlined {
     background-color: transparent;
   }
+
+  &.primary {
+    border-color: $primary-01;
+    color: $primary-01;
+
+    &:hover {
+      background-color: $primary-01;
+      color: $neutral-01;
+      
+    }
+  }
+
