@@ -36,3 +36,13 @@
       color: $neutral-03;
     }
   }
+
+  &.success {
+    border-color: $success-01;
+    color: $success-01;
+
+    &:hover {
+      background-color: $success-01;
+      color: $neutral-01;
+    }
+  }
