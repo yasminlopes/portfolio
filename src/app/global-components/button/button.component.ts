@@ -3,3 +3,5 @@
   @Input() outlined: boolean = false;
   @Input() color: string;
   @Input() bgColor: string;
+
+  @Output() onClick = new EventEmitter<void>();
